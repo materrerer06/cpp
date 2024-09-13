@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <fstream>
 using namespace std;
 
 void Zlicz(string s,int Ile[])
@@ -28,6 +28,12 @@ int main()
 {
     string s1,s2;
 
+//plik
+//    ifstream wejscie("jd.txt");
+//        wejscie>>s1;
+//        wejscie>>s2;
+//    wejscie.close();
+
     cout<<"podaj slowo 1: ";
     cin>>s1;
     cout<<"podaj slowo 2: ";
@@ -36,5 +42,6 @@ int main()
         cout<<"tak"<<endl;
     else
         cout<<"nie"<<endl;
+
 
 }
