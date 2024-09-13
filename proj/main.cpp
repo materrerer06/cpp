@@ -29,19 +29,15 @@ int main()
     string s1,s2;
 
 //plik
-//    ifstream wejscie("jd.txt");
-//        wejscie>>s1;
-//        wejscie>>s2;
-//    wejscie.close();
-
-    cout<<"podaj slowo 1: ";
-    cin>>s1;
-    cout<<"podaj slowo 2: ";
-    cin>> s2;
-    if(Anagramy(s1,s2))
-        cout<<"tak"<<endl;
-    else
-        cout<<"nie"<<endl;
+    ifstream wejscie("jd.txt");
+        wejscie>>s1;
+        wejscie>>s2;
+    wejscie.close();
+    ofstream wyjscie("jd.txt");
+        if(Anagramy(s1,s2))
+            wyjscie<<"tak"<<endl;
+        else
+            wyjscie<<"nie"<<endl;
 
 
 }
